@@ -15,13 +15,31 @@ body {
     flex-direction: column;
     height: 500px;
 }
-
+.background{
+    width: 40%;
+    height: 328px;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #34F30F, #0073ff);
+}
 .generator{
     background-color: #111111;
-    width: 40%;
+    width: 100%;
     margin: 150px auto;
     border-radius:10px;
     padding-inline: 30px;
+}
+#heading{
+    display: flex;
+    justify-content: center;
+
+}
+img{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
 }
 h1{
     padding-block: 25px;
@@ -52,17 +70,18 @@ div.password button{
 }
 
 div.range{
-    margin: 16px 0PX;
+    margin: 20px 0PX;
     display: flex;
     grid-template-columns: 1fr min-content;
     justify-content: center;
     align-items: center;
+    
 }
 div.range span{
     background-color: #34F30F;
     padding: 6px 25px;
     margin-left: 10px;
-    min-width:30px;
+    min-width:72px;
     text-align: center;
     border-radius:10px;
     color: #111111;
@@ -77,7 +96,7 @@ div.range span{
         width: 100%;
         height: 10px;
         background:#1E1E1E;
-        border-radius: 16px;
+        border-radius: 12px;
         outline: none;
         margin: 10px 0;
     }
@@ -101,4 +120,31 @@ div.range span{
         cursor: pointer;
     }
 
+    /* ----- OPTIONS SECTION ------ */
+    
+    #optain-container{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+    div.options{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        justify-content: center;
+        
+    }
+    div.options label{
+        display: block;
+        background-color:#0073ff ;
+        padding-block: 10px;
+        border-radius:10px;
+        cursor: pointer;
+        width: 150px;        
+        
+    }
+    div.options span{
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+    }
  
