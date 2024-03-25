@@ -1,0 +1,49 @@
+ *{
+    margin: 0;
+    padding: 0;
+    color:#34F30F;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+}
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 500px;
+}
+
+.generator{
+    background-color: #111111;
+    width: 350px;
+    margin: 150px auto;
+    padding: 25px;
+    border-radius:10px;
+}
+div.password{
+    display: grid;
+    grid-template-columns: auto min-content;
+    border-radius:10px;
+    overflow: hidden;
+}
+div.password input{
+    padding: 8px 12px;
+    background-color: #1E1E1E;
+    border: 0;
+    color:#34F30F;
+}
+button{
+    background-color: #34F30F;
+    color:black;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border:0;
+    border-radius:10px;
+    font-weight: 700;
+}
+div.password button{
+    border-radius:0;
+}
