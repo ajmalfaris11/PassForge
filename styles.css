@@ -56,6 +56,16 @@ div.password input{
     border: 0;
     letter-spacing: 2px;
 }
+
+button{
+    cursor: pointer;
+}
+button i{
+    color: black;
+    font-weight: 900;
+    font-size: 20px; 
+}
+
 .btn-circle{
     padding: 1px;
     border-radius: 8px;
@@ -77,6 +87,7 @@ button{
     border:0;
     border-radius:10px;
     font-weight: 700;
+    
 }
 div.password button{
     border-radius:0;
@@ -153,7 +164,7 @@ div.range span{
         padding-block: 10px;
         border-radius:10px;
         cursor: pointer;
-        width: 150px;  
+        width: 150px;
         transition: 0.5s;    
         
     }
@@ -195,3 +206,5 @@ div.range span{
     #social-section i:hover{
         color: #0073ff;
     }
+
+    
