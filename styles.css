@@ -63,7 +63,7 @@ div.password input{
 
 }
 .btn-circle:hover{
-    background: linear-gradient(to right, #34F30F, #0073ff);
+    background: linear-gradient(to left, #34F30F, #0073ff);
 }
 .btn-circle:active{
     transform: scale(1.05);
