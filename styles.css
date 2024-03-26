@@ -17,17 +17,17 @@ body {
 }
 .background{
     width: 40%;
-    height: 328px;
+    height: 460px;
     display: flex;
     align-items: center;
-    padding: 1px;
+    padding: 2px;
     border-radius: 12px;
     background: linear-gradient(to right, #34F30F, #0073ff);
 }
 .generator{
     background-color: #111111;
     width: 100%;
-    margin: 150px auto;
+    height: 100%;
     border-radius:10px;
     padding-inline: 30px;
 }
@@ -54,7 +54,16 @@ div.password input{
     padding: 8px 12px;
     background-color: #1E1E1E;
     border: 0;
-    color:#34F30F;
+    color: #0073ff;
+}
+.btn-circle{
+    padding: 1px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #34F30F, #0073ff);
+
+}
+.btn-circle:hover{
+    background: linear-gradient(to right, #34F30F, #0073ff);
 }
 button{
     background-color: #34F30F;
@@ -136,15 +145,47 @@ div.range span{
     }
     div.options label{
         display: block;
-        background-color:#0073ff ;
+        background-color:#1E1E1E ;
         padding-block: 10px;
         border-radius:10px;
         cursor: pointer;
-        width: 150px;        
+        width: 150px;  
+        transition: 0.5s;    
         
     }
+
     div.options span{
         color: rgb(0, 0, 0);
         font-weight: 700;
+        color: #2bff00;
+     
     }
  
+    button.generate{
+        width: 50%;
+        margin-top: 10px;
+        padding: 10px;
+        margin-bottom: 30px;
+        transition: 0.3s ease-in-out;
+        background: linear-gradient(to right, #2bff00, #0073ff);
+        font-size: large;
+        font-weight: 700;
+        border-radius: 12px;
+
+    }
+    button.generate:hover{
+        transform: scale(0.95);
+
+    }
+
+    #social-section{
+        padding-bottom: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #social-section i:hover{
+        color: #0073ff;
+    }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- ----- FONT CDN FILE ---- -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <!-- ----- CSS FILE LINGING ----- -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- ---- OUTPUT SCREEN ----  -->
@@ -21,7 +28,7 @@
                 <img src="imgs/Logo.png" alt="">
                 <h1>assForge</h1>
             </div>
-            
+
             <div class="password">
                 <input type="text" value="test">
                 <button>copy</button>
@@ -30,32 +37,52 @@
                 <input type="range" min="4" max="24" value="4" step="1" id="customRange">
                 <span id="valueDisplay">4</span>
             </div>
+
             <div id="optain-container">
                 <div class="options">
-                    <div class="option">
-                        <label id="lowercaseCb" style="background-color: #34F30F;">
-                            <span>a - z</span>
-                        </label>
+                    <div class="btn-circle">
+                        <div class="option">
+                            <label id="lowercaseCb">
+                                <span>a - z</span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="option">
-                        <label id="uppercaseCb">
-                            <span>A - Z</span>
-                        </label>
+
+                    <div class="btn-circle">
+                        <div class="option">
+                            <label id="uppercaseCb">
+                                <span>A - Z</span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="option">
-                        <label id="digitsCb">
-                            <span>0 - 9</span>
-                        </label>
+
+                    <div class="btn-circle">
+                        <div class="option">
+                            <label id="digitsCb">
+                                <span>0 - 9</span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="option">
-                        <label id="specialsCb">
-                            <span>! @ $ # % ^</span>
-                        </label>
+
+                    <div class="btn-circle">
+                        <div class="option">
+                            <label id="specialsCb">
+                                <span>! @ $ # % ^</span>
+                            </label>
+                        </div>
                     </div>
+
                 </div>
-            </div> 
-        </div>   
+            </div>
+            <button class="generate">Generate</button>
+            <div id="social-section">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
