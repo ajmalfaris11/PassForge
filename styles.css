@@ -65,7 +65,9 @@ button i{
     font-weight: 900;
     font-size: 20px; 
 }
-
+button i:active{
+    transform: scale(0.9);
+}
 .btn-circle{
     padding: 1px;
     border-radius: 8px;
@@ -80,14 +82,13 @@ button i{
 }
 
 button{
-    background-color: #34F30F;
+    background-color: #2bff00;
     color:black;
     text-transform: uppercase;
     padding: 5px 15px;
     border:0;
     border-radius:10px;
-    font-weight: 700;
-    
+    font-weight: 700;   
 }
 div.password button{
     border-radius:0;
@@ -105,7 +106,7 @@ div.range span{
     background-color: #34F30F;
     padding: 6px 25px;
     margin-left: 10px;
-    min-width:72px;
+    width:72px;
     text-align: center;
     border-radius:10px;
     color: #111111;
@@ -212,4 +213,97 @@ div.range span{
         transform: scale(1.2);
     }
 
+    /**========= MEDIA QUERYES =========**/
+
+    @media screen and (max-width:770px) {
+        
+        body{
+            height: 600px;
+        }
+        .background{
+            width: 95%;
+            height:1200px;
+            display: flex;
+            align-items: center;
+            padding: 5px 1px;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .generator{
+            padding-inline: 10%;
+        }
+        div.password input{
+            width: 100%;
+           
+        }
+        div.range{
+            margin: 30px 0PX;
+        }
+        div.range span{
+            padding: 6px 0px;
+            margin-left: 10px;
+        }
+        #optain-container{
+            padding-bottom: 20px;
+        }
+        div.options{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;    
+            
+        }
+        div.options label{
+            padding-block: 15px;
+            border-radius:10px;
+            cursor: pointer;
+            width: 280px;
+            transition: 0.5s;    
+            
+        }
+        div.options span{
+            font-size: 20px;
+         
+        }
+        button.generate{
+            width: 250px;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 24px;
+            border-radius: 8px;
+        }
+    }
+
     
+
+    @media screen and (min-width:770px){
+
+        .background{
+            margin-top: 20px;
+            width: 70%;
+            height:600px;
+
+        }
+
+        .generator{
+            padding-inline: 20%;
+
+        }
+
+        div.options label{
+            width: 300px;
+            padding: 15px;
+            
+        }
+        div.options span{
+            font-size: 24px;
+         
+        }
+        @media screen and (max-width:1000px){
+            div.options label{
+                width: 230px;
+                padding: 15px;
+                
+            }
+        }
+
+    }
