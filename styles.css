@@ -54,7 +54,7 @@ div.password input{
     padding: 8px 12px;
     background-color: #1E1E1E;
     border: 0;
-    color: #0073ff;
+    letter-spacing: 2px;
 }
 .btn-circle{
     padding: 1px;
@@ -171,6 +171,8 @@ div.range span{
         font-size: large;
         font-weight: 700;
         border-radius: 12px;
+        letter-spacing: 2px;
+
 
     }
     button.generate:hover{
