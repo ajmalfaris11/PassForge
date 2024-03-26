@@ -59,12 +59,16 @@ div.password input{
 .btn-circle{
     padding: 1px;
     border-radius: 8px;
-    background: linear-gradient(to right, #34F30F, #0073ff);
+    transition: 0.5s;
 
 }
 .btn-circle:hover{
     background: linear-gradient(to right, #34F30F, #0073ff);
 }
+.btn-circle:active{
+    transform: scale(1.05);
+}
+
 button{
     background-color: #34F30F;
     color:black;
@@ -169,15 +173,15 @@ div.range span{
         transition: 0.3s ease-in-out;
         background: linear-gradient(to right, #2bff00, #0073ff);
         font-size: large;
-        font-weight: 700;
+        font-weight: 900;
         border-radius: 12px;
         letter-spacing: 2px;
-
-
     }
     button.generate:hover{
         transform: scale(0.95);
-
+        box-shadow: 
+        0px 0px 5px #005eff,
+        0px 0px 5px #48ff06;   
     }
 
     #social-section{
