@@ -34,7 +34,7 @@ body {
 #heading{
     display: flex;
     justify-content: center;
-
+    user-select: none;
 }
 img{
     width: 50px;
@@ -111,6 +111,7 @@ div.range span{
     color: #111111;
     cursor: pointer;
     font-weight: 600;
+    user-select: none;
 }
 
     /* Remove default styles */
@@ -156,6 +157,8 @@ div.range span{
         grid-template-columns: 1fr 1fr;
         gap: 25px;
         justify-content: center;
+        user-select: none;
+
         
     }
     div.options label{
@@ -187,6 +190,7 @@ div.range span{
         font-weight: 900;
         border-radius: 12px;
         letter-spacing: 2px;
+        user-select: none;
     }
     button.generate:hover{
         transform: scale(0.95);
@@ -200,8 +204,12 @@ div.range span{
         gap: 20px;
     }
 
+    #social-section i{
+        transition: 0.3s ease-in-out;
+    }
     #social-section i:hover{
         color: #0073ff;
+        transform: scale(1.2);
     }
 
     
