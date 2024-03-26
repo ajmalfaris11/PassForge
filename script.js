@@ -57,6 +57,7 @@ function generate() {
     document.querySelector('input[type="text"]').value = password;
   }
   
+//   genenrate the password when click on generate button
   [...document.querySelectorAll('button.generate')].forEach(elem => {
     elem.addEventListener('click', generate);
   });

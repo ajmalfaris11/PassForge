@@ -190,9 +190,6 @@ div.range span{
     }
     button.generate:hover{
         transform: scale(0.95);
-        box-shadow: 
-        0px 0px 5px #005eff,
-        0px 0px 5px #48ff06;   
     }
 
     #social-section{
