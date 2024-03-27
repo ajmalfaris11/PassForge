@@ -26,7 +26,6 @@ body {
     border-radius: 12px;
     background: linear-gradient(to right, #34F30F, #0073ff);
     overflow: hidden;
-    z-index: 1;
 }
 .spinner{
     position: absolute;
@@ -34,7 +33,7 @@ body {
     height: 1000px; 
     animation: spin 3s linear infinite;
     background: linear-gradient(to right, #34F30F, #0073ff);
-    z-index: -1;
+    z-index: 1;
 }
 /* spinning the  */
 @keyframes spin {
