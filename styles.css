@@ -13,11 +13,12 @@ body {
     align-content: center;
     text-align: center;
     flex-direction: column;
-    height: 500px;
+    /* height: 500px; */
+    height: 100vh;
 }
 .background{
     width: 40%;
-    height: 460px;
+    height:100%;
     display: flex;
     align-items: center;
     padding: 2px;
@@ -216,17 +217,17 @@ div.range span{
     
     @media screen and (max-width:770px) {
         
-        body{
+        /* body{
             height: 600px;
-        }
+        } */
         .background{
             width: 95%;
-            height:1200px;
+            height:680px;
             display: flex;
             align-items: center;
             padding: 5px 1px;
             justify-content: center;
-            margin-top: 100px;
+            /* margin-top: 100px; */
         }
         .generator{
             padding-inline: 10%;
@@ -286,9 +287,8 @@ div.range span{
     @media screen and (min-width:770px){
 
         .background{
-            margin-top: 20px;
             width: 70%;
-            height:600px;
+            height:500px;
         }
 
         .generator{
@@ -302,24 +302,12 @@ div.range span{
             
         }
         div.options span{
-            font-size: 24px;
+            font-size: 20px;
          
         }
         @media screen and (max-width:1000px){
             div.options label{
-                width: 230px;
-                padding: 15px;
-                
-            }
-            div.options label{
-                display: block;
-                background-color:#1E1E1E ;
-                padding-block: 0px;
-                border-radius:10px;
-                cursor: pointer;
-                width: 150px;
-                transition: 0.5s;    
-                
+                width: 230px;                
             }
         }
 
